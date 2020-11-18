@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fadhil</title>
+
+    <!--links-->
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <link rel="icon" href="./assets/images/logo.svg">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="main" id="main">
+      <!--header-->
+      <div class="header">
+        <!--LOGO-->
+        <a href="#" class="header-logo">FADHIL</a>
+
+        <!--Navbar-->
+        <nav>
+          <ul class="header-nav">
+            <li class="header-nav-items-special">
+              <a href="#about">About</a>
+            </li>
+            <li class="header-nav-items-special">
+              <a href="#services">Services</a>
+            </li>
+            <li class="header-nav-items-special">
+              <a href="#contact">Contact</a>
+            </li>
+            <li class="header-nav-items-icon">
+              <a onclick="openNav()"><i class="fa fas fa-bars"></i></a>
+            </li>
+          </ul>
+        </nav>
+
+        <div id="mySidenav" class="sidenav">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+            >&times;</a
+          >
+          <br /><br /><br /><br /><br /><br />
+          <a href="#about" class="side-bar-i" id="side-a">About</a
+          ><br /><br /><br /><br />
+          <a href="#services" class="side-bar-i" id="side-b">Services</a
+          ><br /><br /><br /><br />
+          <a href="#contact" class="side-bar-i" id="side-c">Contact</a
+          ><br /><br /><br /><br />
+          <a href="./index.html" class="side-bar-i special-side">fadhil</a>
+        </div>
+      </div>
+
+      <!--//header-->
+
+      <!--landing-->
+      <div class="landing-home-main">
+        <center>
+          <div class="landing-home-text-div" data-aos="fade-up">
+            <h2 class="landing-home-text">
+              I'M A
+              <span
+                onchange="textEffect()"
+                class="animate"
+                id="animate"
+                data-text=""
+              ></span>
+            </h2>
+          </div>
+        </center>
+      </div>
+      <!--//landing-->
+
+      <!--about-->
+      <div id="about" class="about">
+        <div class="about-text">
+          <span class="about-heading" data-aos="fade-right">About Me</span>
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <span class="about-content" data-aos="fade-left">
+            My name is
+            <a href="https://instagram.com/__fadhil_m_" class="about-name"
+              >FADHIL</a
+            >
+            iam 14 years old student from tirur malappuram My dream is to become
+            a software developer in future In my spare time i lives to code
+            design edit and making videos for my youtube channel all things upon
+            my mood Well i know languages such as Html Css Javascript Python and
+            many more
+          </span>
+
+          <!--skills-->
+          <div class="about-skills">
+            <span class="about-skill-heading" data-aos="fade-down"
+              >My Skills</span
+            >
+
+            <div class="about-skill-skills">
+              <!--html and css-->
+              <div class="about-skill-skills-1">
+                <li>
+                  <h3>Html</h3>
+                  <span class="bar"><span class="html"></span></span>
+                </li>
+                <li>
+                  <h3>Css</h3>
+                  <span class="bar"><span class="css"></span></span>
+                </li>
+              </div>
+              <!--js and py-->
+              <div class="about-skill-skills-1">
+                <li>
+                  <h3>Javascript</h3>
+                  <span class="bar"><span class="javascript"></span></span>
+                </li>
+                <li>
+                  <h3>Python</h3>
+                  <span class="bar"><span class="python"></span></span>
+                </li>
+              </div>
+              <!--pr and figma-->
+              <div class="about-skill-skills-1">
+                <li>
+                  <h3>Premiere Pro</h3>
+                  <span class="bar"><span class="pr"></span></span>
+                </li>
+                <li>
+                  <h3>Figma</h3>
+                  <span class="bar"><span class="figma"></span></span>
+                </li>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--//about-->
+
+      <!--services-->
+      <center>
+        <div id="services" class="services">
+          <div class="service-head">
+            <span class="service-heading" data-aos="fade-right">Services</span>
+          </div>
+
+          <div class="service-service" data-aos="fade-down">
+            <div class="service-1">
+              <div class="service-card">
+                <div class="service-img">
+                  <img
+                    src="./assets/images/web.svg"
+                    alt="fadhil-service-image"
+                  />
+                </div>
+
+                <div class="service-info">
+                  <h3>Web Development</h3>
+                  <p>
+                    Amazing websites as your wish by using latest technology and
+                    give you a free hosting
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="service-1" data-aos="fade-up">
+              <div class="service-card">
+                <div class="service-img">
+                  <img
+                    src="./assets/images/app.svg"
+                    alt="fadhil-service-image"
+                  />
+                </div>
+
+                <div class="service-info">
+                  <h3>App Development</h3>
+                  <p>
+                    Android and ios app with web technologies such as pwa and
+                    react native
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </center>
+      <!--//services-->
+
+      <!--contact-->
+      <center>
+        <div id="contact" class="contact">
+          <div class="contact-head">
+            <span class="service-heading" data-aos="fade-down">Contact</span>
+          </div>
+          <div class="contact-page">
+            <form id="submit-form">
+              <input
+                data-aos="fade-right"
+                type="text"
+                placeholder="Name"
+                name="name"
+                class="input-name"
+                required
+              /><br /><br />
+              <input
+                data-aos="fade-left"
+                type="email"
+                placeholder="Email"
+                name="email"
+                class="input-email"
+                required
+              /><br /><br />
+              <textarea
+                required
+                class="input-message"
+                placeholder="Message"
+                data-aos="fade-right"
+                name="Message"
+              ></textarea
+              ><br /><br /><br />
+              <input
+                type="submit"
+                value="Submit"
+                class="input-button"
+                data-aos="fade-left"
+              />
+            </form>
+          </div>
+        </div>
+      </center>
+      <!--contact-->
+
+      <!--Footer-->
+      <center>
+        <div id="footer" class="footer">
+          <p>
+            &copy
+            <span class="footer-main"><a href="./index.html">fadhil </a></span>
+            Developed By
+            <a href="https://fadhilsaheer.github.io/web/" class="footer-dev"
+              >Unknown Ripper</a
+            >
+          </p>
+          <p class="social">
+            <a href="https://github.com/fadhilsaheer"
+              ><i class="fa fa-github"></i
+            ></a>
+            <a href="https://instagram.com/__fadhil_m_"
+              ><i class="fa fa-instagram"></i
+            ></a>
+            <a href="https://youtube.com/c/UnknownRipper"
+              ><i class="fa fa-youtube-play"></i
+            ></a>
+          </p>
+        </div>
+      </center>
+      <!--//footer-->
+    </div>
+
+    <div id="music">
+      <embed src="./assets/music.mp3" loop="true" autostart="true" hidden="true">
+    </div>
+
+    <div class="loader" id="loader">
+      <div class="ghost">
+        <div class="face">
+          <div class="eyes">
+            <span></span><span></span>
+          </div>
+          <div class="mouth"></div>
+        </div>
+    
+        <div class="hands">
+          <span></span><span></span>
+        </div>
+    
+        <div class="feet">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+    </div>
+
+    <!--Javascript-->
+    <!--cdn-->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <!--local-->
+    <script src="./assets/js/jq.js"></script>
+    <script src="./assets/js/main.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+      $("#submit-form").submit((e) => {
+        e.preventDefault();
+        $.ajax({
+          url:
+            "https://script.google.com/macros/s/AKfycbx8KzGU-lKIX6eePsQ4u-oitqsoHsANbAvsSbVpMg/exec",
+          data: $("#submit-form").serialize(),
+          method: "post",
+          success: function (response) {
+            swal("Message Submitted Successfully", "You message was sended to Fadhil", "success").then((e)=>{
+              window.location.reload();
+            })
+          },
+          error: function (err) {
+            swal("Can't Submit Message", "You message did'nt sended to Fadhil", "error")
+          },
+        });
+      });
+    </script>
+  </body>
+</html>
