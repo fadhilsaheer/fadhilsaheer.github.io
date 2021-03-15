@@ -44,30 +44,31 @@ body {
 
 a {
   text-decoration: none;
+  color: var(--light-3) !important;
 }
 
 /* scroll bar */
 
-::-webkit-scrollbar{
-  width: .5rem;
+::-webkit-scrollbar {
+  width: 0.5rem;
 }
-::-webkit-scrollbar-track{
+::-webkit-scrollbar-track {
   background: none;
 }
 ::-webkit-scrollbar-thumb {
   background: rgba(255, 255, 255, 0.59);
 }
 
-
 /* selection */
 
-::-moz-selection { /* Code for Firefox */
-  color: var(--light-3) ;
+::-moz-selection {
+  /* Code for Firefox */
+  color: var(--light-3);
   background: var(--violet);
 }
 
 ::selection {
-  color: var(--light-3) ;
+  color: var(--light-3);
   background: var(--violet);
 }
 
@@ -125,64 +126,60 @@ header {
   font-size: 70px;
 }
 
-.hero-main-text-container p{
-    color: var(--light-2);
-    font-size: 25px;
-    margin-top: 20px;
+.hero-main-text-container p {
+  color: var(--light-2);
+  font-size: 25px;
+  margin-top: 20px;
 }
 
-
-
-
-@media only screen and (max-width: 1000px){
-    .hero-main{
-        flex-direction: column;
-    }
-    .hero-main-text-container{
-        margin-top: 100px;
-        margin-bottom: 100px;
-    }
-}
-
-@media only screen and (max-width: 579px){
-    .hero-main-text-container h1{
-        font-size: 50px;
-    }
-    .hero-main-svg-container img{
-        width: 90%;
-    }
-}
-
-
-.hero-footer{
-    margin-top: 200px;
-    margin-bottom: 100px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
+@media only screen and (max-width: 1000px) {
+  .hero-main {
     flex-direction: column;
-    align-items: center;
+  }
+  .hero-main-text-container {
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
 }
 
-.hero-footer p{
-    color: var(--light-3);
-    opacity: 50%;
-    font-size: 18px;
+@media only screen and (max-width: 579px) {
+  .hero-main-text-container h1 {
+    font-size: 50px;
+  }
+  .hero-main-svg-container img {
+    width: 90%;
+  }
 }
 
-.hero-footer div{
-    margin-top: 10px;
+.hero-footer {
+  margin-top: 200px;
+  margin-bottom: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
-.hero-footer a{
-    color: var(--light-3);
-    opacity: 50%;
-    padding: 5px;
-    transition: 0.5s;
+.hero-footer p {
+  color: var(--light-3);
+  opacity: 50%;
+  font-size: 18px;
 }
 
-.hero-footer a:hover{
-    opacity: 1;
+.hero-footer div {
+  margin-top: 10px;
+}
+
+.hero-footer a {
+  color: var(--light-3);
+  opacity: 50%;
+  padding: 5px;
+  transition: 0.5s;
+}
+
+.hero-footer a:hover {
+  opacity: 1;
 }
 
 /* about */
@@ -211,13 +208,13 @@ header {
   font-size: 50px;
 }
 
-.about-main p{
-    color: var(--light-2);
-    font-size: 25px;
-    margin-top: 20px;
+.about-main p {
+  color: var(--light-2);
+  font-size: 25px;
+  margin-top: 20px;
 }
 
-.about-subtitle{
+.about-subtitle {
   text-align: center;
   margin-top: 100px;
   font-size: 30px;
@@ -233,36 +230,35 @@ header {
   -webkit-text-fill-color: transparent;
 }
 
-@media only screen and (max-width: 625px){
-  .about-main{
+@media only screen and (max-width: 625px) {
+  .about-main {
     margin-top: 100px;
   }
-  .about-main h1{
+  .about-main h1 {
     font-size: 40px;
   }
 
-  .about-main p{
+  .about-main p {
     font-size: 20px;
   }
 }
 
 /* portfolio */
 
-.portfolio-main{
+.portfolio-main {
   margin-top: 200px;
 }
 
-
-.text-section{
+.text-section {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
 
-.text-section h1{
+.text-section h1 {
   text-align: center;
-  font-family: Recoleta !important; 
+  font-family: Recoleta !important;
   margin-top: 100px;
   font-size: 70px;
   color: #fff;
@@ -277,14 +273,14 @@ header {
   -webkit-text-fill-color: transparent;
 }
 
-.text-section-main-p{
+.text-section-main-p {
   margin-top: 40px;
   color: var(--light-2);
   font-size: 30px;
   text-align: center;
 }
 
-.text-section-p{
+.text-section-p {
   margin-top: 50px;
   text-align: center;
   color: var(--light-3);
@@ -292,38 +288,36 @@ header {
   width: 500px;
 }
 
-@media only screen and (max-width: 761px){
-  .portfolio-main{
+@media only screen and (max-width: 761px) {
+  .portfolio-main {
     margin-top: 70px;
   }
 }
 
-@media only screen and (max-width: 500px){
-  .text-section-p{
+@media only screen and (max-width: 500px) {
+  .text-section-p {
     width: 400px;
   }
 }
-@media only screen and (max-width: 400px){
-  .text-section-p{
+@media only screen and (max-width: 400px) {
+  .text-section-p {
     width: 300px;
   }
 }
-@media only screen and (max-width: 300px){
-  .text-section-p{
+@media only screen and (max-width: 300px) {
+  .text-section-p {
     width: 200px;
   }
 }
 
-
-.auto-slider-container{
+.auto-slider-container {
   width: 100%;
   display: flex;
   justify-content: center;
   margin-top: 100px;
 }
 
-
-.slider-item{
+.slider-item {
   width: 100px;
   height: 100px;
   border-radius: 20px;
