@@ -196,6 +196,7 @@ header {
 }
 
 .about-main h1 {
+  font-family: Recoleta;
   color: #fff;
   background: linear-gradient(
     271deg,
@@ -243,4 +244,90 @@ header {
   .about-main p{
     font-size: 20px;
   }
+}
+
+/* portfolio */
+
+.portfolio-main{
+  margin-top: 200px;
+}
+
+
+.text-section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.text-section h1{
+  text-align: center;
+  font-family: Recoleta !important; 
+  margin-top: 100px;
+  font-size: 70px;
+  color: #fff;
+  background: linear-gradient(
+    271deg,
+    #a0e9ff 30%,
+    #a162e8 50%,
+    #f093b0 70%,
+    #edca85 94%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-section-main-p{
+  margin-top: 40px;
+  color: var(--light-2);
+  font-size: 30px;
+  text-align: center;
+}
+
+.text-section-p{
+  margin-top: 50px;
+  text-align: center;
+  color: var(--light-3);
+  line-height: 40px;
+  width: 500px;
+}
+
+@media only screen and (max-width: 761px){
+  .portfolio-main{
+    margin-top: 70px;
+  }
+}
+
+@media only screen and (max-width: 500px){
+  .text-section-p{
+    width: 400px;
+  }
+}
+@media only screen and (max-width: 400px){
+  .text-section-p{
+    width: 300px;
+  }
+}
+@media only screen and (max-width: 300px){
+  .text-section-p{
+    width: 200px;
+  }
+}
+
+
+.auto-slider-container{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+
+.slider-item{
+  width: 100px;
+  height: 100px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
