@@ -2,6 +2,16 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
 
+@font-face{
+    font-family: FutureLight;
+    src: url(../fonts/FuturaLightRegular.otf);
+}
+
+@font-face{
+    font-family: Recoleta;
+    src: url(../fonts/Recoleta-Medium.otf);
+}
+
 /* colors  */
 
 :root {
@@ -29,6 +39,7 @@ html{
 body{
     background: var(--dark-1);
     font-family: 'Nunito', sans-serif;
+    color: var(--light-1);
 }
 
 a{
