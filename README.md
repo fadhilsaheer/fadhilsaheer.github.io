@@ -1,3 +1,3 @@
-# This project is under construction 👷‍♂️
+# My personal website 😉
 
 https://fadhilsaheer.github.io
