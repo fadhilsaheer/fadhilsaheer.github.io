@@ -46,6 +46,31 @@ a {
   text-decoration: none;
 }
 
+/* scroll bar */
+
+::-webkit-scrollbar{
+  width: .5rem;
+}
+::-webkit-scrollbar-track{
+  background: none;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.59);
+}
+
+
+/* selection */
+
+::-moz-selection { /* Code for Firefox */
+  color: var(--light-3) ;
+  background: var(--violet);
+}
+
+::selection {
+  color: var(--light-3) ;
+  background: var(--violet);
+}
+
 /* navbar */
 
 .main {
@@ -85,6 +110,7 @@ header {
 }
 
 .hero-main-text-container h1 {
+  font-family: Recoleta;
   color: #fff;
   background: linear-gradient(
     271deg,
@@ -159,3 +185,62 @@ header {
     opacity: 1;
 }
 
+/* about */
+
+.about-main {
+  margin-top: 200px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.about-main h1 {
+  color: #fff;
+  background: linear-gradient(
+    271deg,
+    #a0e9ff 30%,
+    #a162e8 50%,
+    #f093b0 70%,
+    #edca85 94%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  font-size: 50px;
+}
+
+.about-main p{
+    color: var(--light-2);
+    font-size: 25px;
+    margin-top: 20px;
+}
+
+.about-subtitle{
+  text-align: center;
+  margin-top: 100px;
+  font-size: 30px;
+  color: #fff;
+  background: linear-gradient(
+    271deg,
+    #a0e9ff 30%,
+    #a162e8 50%,
+    #f093b0 70%,
+    #edca85 94%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@media only screen and (max-width: 625px){
+  .about-main{
+    margin-top: 100px;
+  }
+  .about-main h1{
+    font-size: 40px;
+  }
+
+  .about-main p{
+    font-size: 20px;
+  }
+}
