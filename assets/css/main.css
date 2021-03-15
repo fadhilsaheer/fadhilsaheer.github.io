@@ -45,3 +45,32 @@ body{
 a{
     text-decoration: none;
 }
+
+
+/* navbar */
+
+.main{
+    margin: 30px;
+}
+
+header{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.navbar-element{
+    margin-right: 20px;
+    color: var(--light-2);
+    font-weight: 500;
+    font-size: 20px;
+    transition: 0.5s;
+}
+
+.navbar-element:hover{
+    opacity: 0.8;
+}
+
+.navbar-element-current{
+    border-bottom: 2px solid var(--pink);
+}
