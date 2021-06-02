@@ -27,6 +27,18 @@ a {
     color: var(--accentColor);
 }
 
+::-webkit-scrollbar {
+  width: 2px;
+}
+
+::-webkit-scrollbar-track {
+  background: none;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--accentColor);
+}
+
 .app {
     margin: 50px;
 }
