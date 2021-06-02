@@ -26,8 +26,26 @@ body {
     margin: 50px;
 }
 
+.important {
+    -webkit-text-stroke: 0px transparent;
+    color: var(--accentColor);
+}
+
 /* header */
 
 .header img {
     width: 50px;
+}
+
+/* title  */
+
+.title {
+    margin-top: 80px;
+    margin-left: 100px;
+}
+
+.title h1 {
+    -webkit-text-stroke: 2px var(--accentColor);
+    color: transparent;
+    font-size: 70px;
 }
