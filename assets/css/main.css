@@ -172,3 +172,38 @@ a {
 .more:hover {
     opacity: 1;
 }
+
+/* contact */
+
+.contact {
+    margin-top: 150px;
+    margin-left: 250px;
+}
+
+.contact h2 {
+    font-size: 60px;
+}
+
+.contact div {
+    margin-top: 30px;
+}
+
+.contact a {
+    margin-top: 20px;
+    font-size: 40px;
+    transition: 0.3s;
+}
+
+.contact a:hover {
+    opacity: 0.8;
+}
+
+/* footer */
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    opacity: 0.8;
+}
