@@ -33,6 +33,7 @@ body {
 .important {
     -webkit-text-stroke: 0px transparent;
     color: var(--accentColor);
+    font-weight: bold;
 }
 
 .outlined {
@@ -74,4 +75,73 @@ body {
 .content p {
     font-size: 60px;
     flex: 1;
+}
+
+/* portfolio */
+
+.portfolio {
+    margin-top: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.portfolio p {
+    text-align: center;
+    font-size: 60px;
+}
+
+.portfolio-projects {
+    display: grid;
+    grid-gap: 25px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    margin-top: 80px;
+}
+
+.portfolio-projects div {
+    background: var(--secondaryColor);
+    padding: 0px 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    cursor: pointer;
+    transition: 0.3s;
+    color: var(--accentColor);
+}
+
+.portfolio-projects h2 {
+    margin-top: 50px;
+    font-size: 50px;
+    -webkit-text-stroke: 0px transparent;
+    /* color: var(--accentColor); */
+    font-weight: bold;
+}
+
+.portfolio-projects p {
+    font-size: 30px;
+    -webkit-text-stroke: 1px var(--accentColor);
+    color: transparent;
+    margin-top: 15px;
+}
+
+.portfolio-projects i {
+    font-size: 40px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin: 50px 0px;
+}
+
+.portfolio-projects i:hover {
+    opacity: 0.8;
+}
+
+.portfolio-projects div:hover {
+    transform: scale(1.1);
+    background: var(--accentColor);
+    color: var(--secondaryColor);
+}
+
+.portfolio-projects div:hover p {
+    -webkit-text-stroke: 1px var(--secondaryColor);
 }
