@@ -207,3 +207,69 @@ footer {
     margin-top: 150px;
     opacity: 0.8;
 }
+
+/* responsive layout */
+
+@media(max-width: 1615px) {
+
+    .portfolio-projects {
+        padding: 50px 100px;
+    }
+
+    .contact {
+        margin-left: 100px;
+    }
+
+}
+
+@media(max-width: 1198px) {
+    
+    .portfolio-projects {
+        padding: 50px 20px;
+    }
+
+    .portfolio-projects h2 {
+        font-size: 30px;
+    }
+
+    .portfolio-projects p {
+        font-size: 20px !important;
+    }
+
+    .content p {
+        font-size: 40px;
+    }
+
+    .portfolio p {
+        font-size: 40px;
+    }
+
+}
+
+@media (max-width: 1070px) {
+
+    .title h1 {
+        font-size: 50px;
+    }
+
+    .content {
+        flex-direction: column;
+        text-align: center;
+    }
+    .content img {
+        display: none;
+    }
+
+    .contact {
+        margin-left: 20px;
+    }
+
+    .contact h2 {
+        font-size: 40px;
+    }
+
+    .contact a {
+        font-size: 30px;
+    }
+
+}
