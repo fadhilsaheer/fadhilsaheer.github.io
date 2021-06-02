@@ -48,11 +48,30 @@ body {
 
 /* title  */
 
-/* .title {
-    margin-top: 80px;
-    margin-left: 100px;
-} */
-
 .title h1 {
     font-size: 70px;
+}
+
+/* content */
+
+.content {
+    margin-top: 300px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.content div {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content img {
+    transform: scale(1.5);   
+}
+
+.content p {
+    font-size: 60px;
+    flex: 1;
 }
