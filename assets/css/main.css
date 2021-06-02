@@ -195,7 +195,7 @@ a {
 }
 
 .contact a:hover {
-    opacity: 0.8;
+    opacity: 0.5;
 }
 
 /* footer */
@@ -204,6 +204,6 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 100px;
+    margin-top: 150px;
     opacity: 0.8;
 }
