@@ -1,3 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap');
+
+:root {
+    --primaryColor: #1D1D1F;
+    --secondaryColor: #1F2024;
+    --accentColor: #F6F8F3;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -6,4 +14,10 @@
 
 html {
     scroll-behavior: smooth;
+}
+
+body {
+    background: var(--primaryColor);
+    font-family: 'Nunito', sans-serif;
+    color: var(--accentColor);
 }
