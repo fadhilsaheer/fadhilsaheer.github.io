@@ -21,3 +21,13 @@ body {
     font-family: 'Nunito', sans-serif;
     color: var(--accentColor);
 }
+
+.app {
+    margin: 50px;
+}
+
+/* header */
+
+.header img {
+    width: 50px;
+}
