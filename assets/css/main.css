@@ -211,65 +211,37 @@ footer {
 /* responsive layout */
 
 @media(max-width: 1615px) {
-
-    .portfolio-projects {
-        padding: 50px 100px;
-    }
-
-    .contact {
-        margin-left: 100px;
-    }
-
+    .portfolio-projects { padding: 50px 100px; }
+    .contact { margin-left: 100px; }
+    .app-content { margin: 80px 0px; }
 }
 
-@media(max-width: 1198px) {
-    
-    .portfolio-projects {
-        padding: 50px 20px;
-    }
-
-    .portfolio-projects h2 {
-        font-size: 30px;
-    }
-
-    .portfolio-projects p {
-        font-size: 20px !important;
-    }
-
-    .content p {
-        font-size: 40px;
-    }
-
-    .portfolio p {
-        font-size: 40px;
-    }
-
+@media(max-width: 1198px) {    
+    .portfolio-projects { padding: 50px 20px; }
 }
 
 @media (max-width: 1070px) {
-
-    .title h1 {
-        font-size: 50px;
-    }
-
-    .content {
+    .portfolio-projects h2 { font-size: 40px; }
+    .portfolio-projects p { font-size: 30px !important; }
+    .content { 
         flex-direction: column;
         text-align: center;
     }
-    .content img {
-        display: none;
-    }
+    .content img { display: none; }
+    .contact { margin-left: 20px; }
+    .portfolio-projects { grid-template-columns: repeat(1, minmax(0, 1fr)); }
+}
 
-    .contact {
-        margin-left: 20px;
-    }
+@media (max-width: 876px) { .title { margin: 0; } }
 
-    .contact h2 {
-        font-size: 40px;
-    }
-
-    .contact a {
-        font-size: 30px;
-    }
-
+@media (max-width: 639px) {
+    .app-content { margin: 80px 0px; }
+    .title h1 { font-size: 40px; }
+    .content p { font-size: 30px; }
+    .portfolio p { font-size: 30px; }
+    .portfolio-projects h2 { font-size: 30px; }
+    .portfolio-projects p { font-size: 20px !important; }
+    .portfolio-projects i { font-size: 30px; }
+    .contact h2 { font-size: 30px; }
+    .contact a { font-size: 20px; }
 }
