@@ -1,4 +1,4 @@
-{
+portfolioData = {
     "projects": [
         {
             "title": "Unknown Chat",
@@ -6,12 +6,12 @@
             "link": "https://github.com/fadhilsaheer/unknown-chat"
         },
         {
-            "title": "Disney+ Close",
+            "title": "Disney+ Clone",
             "description": "Ui clone",
             "link": "https://github.com/your-code-is-my-property/disney-plus-clone"
         },
         {
-            "title": "The Todoey",
+            "title": "Todoey App",
             "description": "Todo app",
             "link": "https://github.com/fadhilsaheer/awesome/tree/master/awesome-flutter/production-apps/todoey"
         },
