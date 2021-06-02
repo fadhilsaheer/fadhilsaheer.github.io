@@ -1,0 +1,24 @@
+{
+    "projects": [
+        {
+            "title": "Unknown Chat",
+            "description": "Just chat",
+            "link": "https://github.com/fadhilsaheer/unknown-chat"
+        },
+        {
+            "title": "Disney+ Close",
+            "description": "Ui clone",
+            "link": "https://github.com/your-code-is-my-property/disney-plus-clone"
+        },
+        {
+            "title": "The Todoey",
+            "description": "Todo app",
+            "link": "https://github.com/fadhilsaheer/awesome/tree/master/awesome-flutter/production-apps/todoey"
+        },
+        {
+            "title": "Bmi Calculator",
+            "description": "let's calculate",
+            "link": "https://github.com/fadhilsaheer/awesome/tree/master/awesome-flutter/apps/bmi"
+        }
+    ]
+}
