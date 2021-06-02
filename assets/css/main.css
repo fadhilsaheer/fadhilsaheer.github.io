@@ -54,6 +54,10 @@ a {
 
 /* title  */
 
+.title {
+    margin-top: 200px;
+}
+
 .title h1 {
     font-size: 70px;
 }
