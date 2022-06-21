@@ -1,9 +1,11 @@
 const allSocials = [
   'https://github.com/fadhilsaheer',
-  'https://dev.to/fadhilsaheer',
   'https://twitter.com/fadhilsaheer',
+  'https://dev.to/fadhilsaheer',
+  'https://instagram.com/fadhilsaheer',
   'https://medium.com/@fadhilsaheer',
-  '',
+  'https://discord.com/users/733166402567012363',
+  'https://t.me/fadhilsaheer',
 ];
 
 export const getRandomLink = () => {
