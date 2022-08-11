@@ -22,6 +22,14 @@ export const projects: Project[] = [
     stack: 'Rust, Tauri, SQlite, Typescript, React, Tailwind, Chakra UI.',
   },
   {
+    title: 'Ecom',
+    description:
+      'A fullstack E-commerce app where users can list their products, & chat other product owners to make a deal. Similar like olx.',
+    link: 'https://github.com/octoi/ecom',
+    stack:
+      'Rust, Typescript, Prisma, GraphQL, JWT, Next.Js, Tailwind, Mantine.',
+  },
+  {
     title: 'RTTP',
     description:
       'A CLI application which parse json files to send customized API requests blazingly fast.',
