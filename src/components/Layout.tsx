@@ -26,7 +26,10 @@ interface Props {
 
 export const Layout: ReactComponent<Props> = ({ children, Navbar }) => {
   return (
-    <div className='h-full bg-gray-900 antialiased selection:bg-purple-500/90 selection:text-white'>
+    <div
+      id='home'
+      className='h-full bg-gray-900 antialiased selection:bg-purple-500/90 selection:text-white'
+    >
       <svg
         className='pointer-events-none fixed isolate z-50 opacity-70 mix-blend-soft-light'
         width='100%'
