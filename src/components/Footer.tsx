@@ -38,7 +38,8 @@ export const Footer: React.FC = () => {
         </div>
       </div>
       <p className='mt-8 text-gray-600'>
-        Built with <Link href='https://reactjs.org/' title='React JS' /> and{' '}
+        Built with <Link href='https://vitejs.dev/' title='Vite' />,{' '}
+        <Link href='https://reactjs.org/' title='React JS' /> and{' '}
         <Link href='https://tailwindcss.com' title='Tailwind' />
       </p>
     </div>
