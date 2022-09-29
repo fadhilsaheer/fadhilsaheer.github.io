@@ -7,7 +7,21 @@ interface Project {
 
 export const projects: Project[] = [
   {
-    title: 'Uchat',
+    title: 'Hearbeat\u2764',
+    description:
+      'A patient management system designed for doctors. In this app doctors can add patient data using simple forms, which later they can save as PDF or print as document.',
+    link: 'https://octoi.github.io/heartbeat/',
+    stack: 'Rust, Tauri, SQlite, Typescript, React, Tailwind, Chakra UI',
+  },
+  {
+    title: 'Ecom\u{1F6D2}',
+    description:
+      'A fullstack E-commerce app where users can list their products, & chat other product owners to make a deal. Similar like olx.',
+    link: 'https://github.com/octoi/ecom',
+    stack: 'Rust, Typescript, Prisma, GraphQL, JWT, Next.Js, Tailwind, Mantine',
+  },
+  {
+    title: 'Uchat\u{1F4AC}',
     description:
       'A chat app, where users can create rooms and chat together. Its like clubhouse but for chatting.',
     link: 'https://github.com/octoi/uchat',
@@ -15,28 +29,14 @@ export const projects: Project[] = [
       'Typescript, Socket IO, GraphQl, Prisma, PostgreSQL, Redis, Tailwind, Next JS, Chakra UI',
   },
   {
-    title: 'Hearbeat',
-    description:
-      'A patient management system designed for doctors. In this app doctors can add patient data using simple forms, which later they can save as PDF or print as document.',
-    link: 'https://octoi.github.io/heartbeat/',
-    stack: 'Rust, Tauri, SQlite, Typescript, React, Tailwind, Chakra UI',
-  },
-  {
-    title: 'Ecom',
-    description:
-      'A fullstack E-commerce app where users can list their products, & chat other product owners to make a deal. Similar like olx.',
-    link: 'https://github.com/octoi/ecom',
-    stack: 'Rust, Typescript, Prisma, GraphQL, JWT, Next.Js, Tailwind, Mantine',
-  },
-  {
-    title: 'RTTP',
+    title: 'RTTP\u{1F468}\u{200D}\u{1F4BB}',
     description:
       'A CLI application which parse json files to send customized API requests blazingly fast.',
     link: 'https://github.com/octoi/rttp',
     stack: 'Rust',
   },
   {
-    title: 'Proshop',
+    title: 'Proshop\u{1F4B8}',
     description:
       'An E-commerce app where admins can upload products & users can buy it using paypal.',
     link: 'https://github.com/octoi/uchat',
