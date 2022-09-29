@@ -20,7 +20,12 @@ export const Skills: React.FC = () => {
       </p>
       <div className='mt-9 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2'>
         {skills.map((skill, idx) => (
-          <Skill key={idx} title={skill.title} icon={skill.icon} />
+          <Skill
+            key={idx}
+            title={skill.title}
+            icon={skill.icon}
+            link={skill.link}
+          />
         ))}
       </div>
       <p className='mt-7 text-xl text-rose-100/50'>And much more...</p>
