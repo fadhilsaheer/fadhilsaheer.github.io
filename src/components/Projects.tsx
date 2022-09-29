@@ -19,7 +19,7 @@ export const Projects: React.FC = () => {
                 {project.title}
               </h2>
               <div className='mt-2 flex flex-wrap space-x-2 text-base text-rose-100/50'>
-                Build using {project.stack}
+                {project.stack.trim().split(',').join(' · ')}
               </div>
               <p className='mt-4 text-lg text-rose-100/70 line-clamp-3'>
                 {project.description}
