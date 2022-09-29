@@ -24,7 +24,7 @@ export const Navbar: React.FC<Props> = ({ show }) => {
           <div className='flex items-center space-x-6'>
             <ProfileImage size='small' />
           </div>
-          <Socials hideTitle />
+          <Socials />
         </div>
       </Transition>
     </div>

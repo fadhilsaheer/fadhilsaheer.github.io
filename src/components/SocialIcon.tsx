@@ -5,15 +5,9 @@ interface Props {
   link: string;
   Icon: IconType;
   title: string;
-  hideTitle?: boolean;
 }
 
-export const SocialIcon: React.FC<Props> = ({
-  link,
-  Icon,
-  title,
-  hideTitle,
-}) => {
+export const SocialIcon: React.FC<Props> = ({ link, Icon, title }) => {
   return (
     <a href={link} className='group'>
       <div className='flex items-center space-x-2'>
@@ -22,7 +16,7 @@ export const SocialIcon: React.FC<Props> = ({
             <Icon className='w-[18px] transform text-rose-100 transition delay-100 duration-500 ease-out group-hover:scale-110' />
           </div>
         </div>
-        <div className={hideTitle ? 'hidden sm:block' : ''}>{title}</div>
+        <div className='hidden sm:block'>{title}</div>
       </div>
     </a>
   );
