@@ -18,7 +18,7 @@ const Link: React.FC<Props> = ({ href, title }) => {
 
 export const Footer: React.FC = () => {
   return (
-    <div className='mt-36 pb-36 text-base'>
+    <div className='mt-20 pb-36 text-base'>
       <div className='text-gray-500'>
         <div className='flex flex-col justify-between font-medium lg:flex-row'>
           <div className='flex space-x-5'>
