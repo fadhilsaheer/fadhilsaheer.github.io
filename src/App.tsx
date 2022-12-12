@@ -1,6 +1,7 @@
 import React from 'react';
 import { useIntersection } from 'react-use';
 import { About } from './components/About';
+import { Experience } from './components/Experience';
 import { Footer } from './components/Footer';
 import { Layout } from './components/Layout';
 import { Navbar } from './components/Navbar';
@@ -26,6 +27,7 @@ export const App: React.FC = () => {
       </div>
       <Skills />
       <Projects />
+      <Experience />
       <Footer />
     </Layout>
   );
