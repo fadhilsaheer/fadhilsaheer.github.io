@@ -7,10 +7,16 @@ interface Project {
 
 export const projects: Project[] = [
   {
+    title: 'Snorlax\u{1F4C1}',
+    description: 'A local cloud storage system where users can connect to a server & manage files using client.',
+    link: 'https://github.com/hyfic/snorlax',
+    stack: 'Go, Gin, Rust, Tauri, Typescript, React, Tailwind, Chakra UI',
+  },
+  {
     title: 'Hearbeat\u2764',
     description:
       'A patient management system designed for doctors. In this app doctors can add patient data using simple forms, which later they can save as PDF or print as document.',
-    link: 'https://octoi.github.io/heartbeat/',
+    link: 'https://hyfic.github.io/heartbeat/',
     stack: 'Rust, Tauri, SQlite, Typescript, React, Tailwind, Chakra UI',
   },
   {
@@ -27,19 +33,5 @@ export const projects: Project[] = [
     link: 'https://github.com/octoi/uchat',
     stack:
       'Typescript, Socket IO, GraphQl, Prisma, PostgreSQL, Redis, Tailwind, Next JS, Chakra UI',
-  },
-  {
-    title: 'RTTP\u{1F468}\u{200D}\u{1F4BB}',
-    description:
-      'A CLI application which parse json files to send customized API requests blazingly fast.',
-    link: 'https://github.com/octoi/rttp',
-    stack: 'Rust',
-  },
-  {
-    title: 'Proshop\u{1F4B8}',
-    description:
-      'An E-commerce app where admins can upload products & users can buy it using paypal.',
-    link: 'https://github.com/octoi/uchat',
-    stack: 'Python, Django, React, Paypal API',
   },
 ];
