@@ -6,3 +6,15 @@
 My personal website
 
 https://fadhilsaheer.tech
+
+## Setup
+```bash
+$ pnpm install
+```
+```bash
+$ pnpm dev
+```
+Build
+```bash
+$ pnpm build
+```
