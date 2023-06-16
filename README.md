@@ -3,7 +3,7 @@
 # Fadhil Saheer
 > Fullstack hobbyist developer.
 
-My personal website
+My personal website, built using React & tailwind
 
 https://fadhilsaheer.tech
 
