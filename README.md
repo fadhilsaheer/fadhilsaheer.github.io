@@ -18,3 +18,5 @@ Build
 ```bash
 $ pnpm build
 ```
+
+> Converting to next js app
