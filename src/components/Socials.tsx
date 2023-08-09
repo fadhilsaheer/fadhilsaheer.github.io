@@ -1,5 +1,5 @@
 import type React from 'react';
-import { FaGithub, FaInstagram, FaTwitter } from 'react-icons/fa';
+import { FaGithub, FaInstagram, FaTwitter } from 'react-icons/fa/index';
 import { SocialIcon } from './SocialIcon';
 
 export const Socials: React.FC = () => {

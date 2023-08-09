@@ -1,5 +1,6 @@
 import type React from 'react';
-import { useWindowScroll } from 'react-use';
+import pkg from 'react-use';
+const { useWindowScroll } = pkg;
 
 type ReactComponent<Props = {}> = React.FC<React.PropsWithChildren<Props>>;
 

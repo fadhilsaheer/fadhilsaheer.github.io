@@ -1,5 +1,6 @@
 import React from 'react';
-import { useIntersection } from 'react-use';
+import pkg from 'react-use';
+const { useIntersection } = pkg;
 import { About } from './About';
 import { Experience } from './Experience';
 import { Footer } from './Footer';
