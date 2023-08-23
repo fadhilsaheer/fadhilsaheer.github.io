@@ -1,4 +1,4 @@
-import { useWindowScroll } from 'react-use';
+import { useWindowScroll } from 'react-use/esm';
 
 export const GradientBackground = () => {
   const { y } = useWindowScroll();

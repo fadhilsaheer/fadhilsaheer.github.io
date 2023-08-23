@@ -1,7 +1,6 @@
-import type React from 'react';
+import React from 'react';
+import { useIntersection } from 'react-use/esm';
 import { Transition as HeadlessTransition } from '@headlessui/react';
-import { useRef } from 'react';
-import { useIntersection } from 'react-use';
 
 interface Props {
   show?: boolean;
@@ -14,7 +13,7 @@ export const Transition: React.FC<Props> = ({
   show = false,
   refId,
 }) => {
-  const intersectionRef = useRef(document.getElementById(refId));
+  const intersectionRef = React.useRef(document.getElementById(refId));
   const intersection = useIntersection(intersectionRef, {
     root: null,
     rootMargin: '-100px',

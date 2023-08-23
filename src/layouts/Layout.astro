@@ -83,7 +83,7 @@ const { showNav, navRefId } = Astro.props;
         <slot />
         <Footer />
       </main>
-      <GradientBackground client:load />
+      <GradientBackground client:only />
     </div>
   </body>
 </html>
