@@ -1,0 +1,25 @@
+---
+import { Transition } from './Transition';
+import ProfileImage from './ProfileImage.astro';
+import Socials from './Socials.astro';
+
+interface Props {
+  showNav?: boolean;
+  navRefId: string;
+}
+
+const { showNav, navRefId } = Astro.props;
+---
+
+<div
+  class='pointer-events-none fixed top-6 z-30 w-full grid grid-cols-[1fr,min(640px,100%),1fr] px-4'
+>
+  <Transition show={showNav} refId={navRefId} client:only>
+    <div class='flex items-center justify-between'>
+      <div class='flex items-center space-x-6'>
+        <ProfileImage size='small' />
+      </div>
+      <Socials />
+    </div>
+  </Transition>
+</div>

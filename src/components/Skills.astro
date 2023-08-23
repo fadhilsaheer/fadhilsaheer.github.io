@@ -1,0 +1,27 @@
+---
+import Skill from './Skill.astro';
+import { skills } from '../data/skills';
+---
+
+<div class='mt-16'>
+  <h2 class='text-2xl sm:text-3xl font-medium text-rose-100/80'>Skills</h2>
+  <p class='mt-7 text-xl text-rose-100/50'>
+    I'm doing this for almost <span id='experience'></span> years from now, and I
+    have learned a lot of things through this journey.
+  </p>
+  <div class='mt-9 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2'>
+    {
+      skills.map((skill) => (
+        <Skill title={skill.title} icon={skill.icon} link={skill.link} />
+      ))
+    }
+  </div>
+  <p class='mt-7 text-xl text-rose-100/50'>And much more...</p>
+</div>
+
+<script>
+  import { getYearDiffFromDate } from '../utils/getYearDiffFromDate';
+
+  const experienceEl = document.getElementById('experience');
+  experienceEl!.innerText = getYearDiffFromDate('04/20/2020').toString();
+</script>

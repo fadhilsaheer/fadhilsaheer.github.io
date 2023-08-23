@@ -1,0 +1,34 @@
+---
+import ProfileImage from './ProfileImage.astro';
+import Socials from './Socials.astro';
+---
+
+<div>
+  <div class='flex items-center space-x-6'>
+    <ProfileImage size='large' />
+    <div>
+      <h1 class='text-3xl font-medium text-rose-100/80 sm:text-4xl'>
+        Fadhil Saheer
+      </h1>
+      <h2 class='align-middle text-lg leading-6 text-rose-100/50'>
+        Fullstack hobbyist developer.
+      </h2>
+    </div>
+  </div>
+  <article class='mt-9 text-xl text-rose-100/90'>
+    Hello world, I'm <span id='age'></span> y/o passionate developer from Kerala,
+    India who loves to bring ideas to life. I love to develop applications using
+    cutting edge tech.
+  </article>
+  <div class='mt-9'>
+    <Socials />
+  </div>
+</div>
+
+<script>
+  import { getYearDiffFromDate } from '../utils/getYearDiffFromDate';
+
+  const ageElement = document.getElementById('age');
+
+  ageElement!.innerText = getYearDiffFromDate('08/23/2006').toString();
+</script>

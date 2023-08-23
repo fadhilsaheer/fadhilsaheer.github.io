@@ -1,0 +1,32 @@
+---
+import Link from './Link.astro';
+---
+
+<div class='mt-20 pb-36 text-base'>
+  <div class='text-gray-500'>
+    <div class='flex flex-col justify-between font-medium lg:flex-row'>
+      <div class='flex space-x-5'>
+        <Link
+          href='https://discord.com/users/733166402567012363'
+          title='Discord'
+        />
+        <Link
+          href='https://www.linkedin.com/in/fadhilsaheer'
+          title='Linkedin'
+        />
+        <Link href='https://t.me/fadhilsaheer' title='Telegram' />
+        <Link href='https://dev.to/fadhilsaheer' title='Dev' />
+      </div>
+      <div class='space-x-5 pt-2 lg:pt-0'>
+        <Link href='https://instagram.com/fadhilsaheer' title='Instagram' />
+        <Link href='https://twitter.com/fadhilsaheer' title='Twitter' />
+        <Link href='https://github.com/fadhilsaheer' title='Github' />
+      </div>
+    </div>
+  </div>
+  <p class='mt-8 text-gray-600'>
+    Built with <Link href='https://astro.build/' title='Astro' />,{' '}
+    <Link href='https://reactjs.org/' title='React JS' /> and{' '}
+    <Link href='https://tailwindcss.com' title='Tailwind' />
+  </p>
+</div>

@@ -1,0 +1,26 @@
+---
+import type { IconType } from 'react-icons';
+
+interface Props {
+  link: string;
+  Icon: IconType;
+  title: string;
+}
+
+const { title, Icon, link } = Astro.props;
+---
+
+<a href={link} class='group'>
+  <div class='flex items-center space-x-2'>
+    <div class='flex justify-center sm:mb-0 sm:block'>
+      <div
+        class='rounded-lg bg-gradient-to-tl from-purple-500/80 to-rose-400/80 p-1 shadow-lg transition-all duration-300 ease-out group-hover:scale-[1.2] group-hover:rounded-[10px] group-hover:shadow-purple-500/40 group-active:translate-y-1'
+      >
+        <Icon
+          className='w-[18px] transform text-rose-100 transition delay-100 duration-500 ease-out group-hover:scale-110'
+        />
+      </div>
+    </div>
+    <div class='hidden sm:block'>{title}</div>
+  </div>
+</a>

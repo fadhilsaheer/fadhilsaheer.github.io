@@ -1,4 +1,16 @@
-<!DOCTYPE html>
+---
+import Footer from '../components/Footer.astro';
+import { GradientBackground } from '../components/GradientBackground';
+import Navbar from '../components/Navbar.astro';
+
+interface Props {
+  showNav?: boolean;
+  navRefId: string;
+}
+
+const { showNav, navRefId } = Astro.props;
+---
+
 <html lang='en'>
   <head>
     <meta name='viewport' content='width=device-width, initial-scale=1.0' />
@@ -9,14 +21,14 @@
     <!-- Search Engine -->
     <meta
       name='description'
-      content='16 y/o passionate developer who loves to bring ideas to life'
+      content='17 y/o passionate developer who loves to bring ideas to life'
     />
     <meta name='image' content='/favicon.png' />
     <!-- Schema.org for Google -->
     <meta itemprop='name' content='Fadhil | Fullstack hobbyist developer.' />
     <meta
       itemprop='description'
-      content='16 y/o passionate developer who loves to bring ideas to life'
+      content='17 y/o passionate developer who loves to bring ideas to life'
     />
     <meta itemprop='image' content='/favicon.png' />
     <!-- Twitter -->
@@ -27,7 +39,7 @@
     />
     <meta
       name='twitter:description'
-      content='16 y/o passionate developer who loves to bring ideas to life'
+      content='17 y/o passionate developer who loves to bring ideas to life'
     />
     <meta name='twitter:site' content='@fadhilsaheer' />
     <meta name='twitter:creator' content='@fadhilsaheer' />
@@ -36,7 +48,7 @@
     <meta name='og:title' content='Fadhil | Fullstack hobbyist developer.' />
     <meta
       name='og:description'
-      content='16 y/o passionate developer who loves to bring ideas to life'
+      content='17 y/o passionate developer who loves to bring ideas to life'
     />
     <meta name='og:image' content='/favicon.png' />
     <meta name='og:url' content='https://fadhilsaheer.tech' />
@@ -44,10 +56,37 @@
     <meta name='og:type' content='website' />
   </head>
   <body>
-      <slot />
+    <div
+      id='home'
+      class='bg-gray-900 antialiased selection:bg-purple-500/90 selection:text-white min-h-screen'
+    >
+      <svg
+        class='pointer-events-none fixed isolate z-50 opacity-70 mix-blend-soft-light'
+        width='100%'
+        height='100%'
+      >
+        <filter id='pedroduarteisalegend'>
+          <feTurbulence
+            type='fractalNoise'
+            baseFrequency='0.80'
+            numOctaves='4'
+            stitchTiles='stitch'></feTurbulence>
+        </filter>
+        <rect width='100%' height='100%' filter='url(#pedroduarteisalegend)'
+        ></rect>
+      </svg>
+
+      <Navbar showNav={showNav} navRefId={navRefId} />
+      <main
+        class='relative z-10 grid grid-cols-[1fr,min(640px,100%),1fr] px-4 pt-36 sm:pt-48 text-lg text-rose-100/90 xl:grid-cols-[1fr,minmax(auto,280px),min(640px,100%),minmax(auto,280px),1fr] xl:gap-x-8 xl:px-0 [&>*]:col-start-2 xl:[&>*]:col-start-3'
+      >
+        <slot />
+        <Footer />
+      </main>
+      <GradientBackground client:load />
+    </div>
   </body>
 </html>
-
 
 <style>
   html {
