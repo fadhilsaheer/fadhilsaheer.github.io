@@ -10,7 +10,7 @@ interface Props {
 const { title, link, substring, description, image } = Astro.props;
 ---
 
-<a href={link}>
+<a href={link} target='_blank'>
   <div
     class='cursor-pointer group w-full hover:opacity-80 rounded-2xl bg-white/5 p-7 shadow-surface-elevation-low transition duration-300 hover:bg-white/10 hover:shadow-surface-elevation-medium'
   >
