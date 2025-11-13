@@ -1,3 +1,7 @@
+---
+import ExperienceItem from "./ExperienceItem.astro";
+---
+
 <section class="container">
   <div>
     <h3
@@ -10,5 +14,32 @@
       to enterprise-level platforms. Here&apos;s a snapshot of my journey so
       far.
     </p>
+  </div>
+
+  <div class="mt-8 space-y-5">
+    <ExperienceItem
+      period="2023 - 2025"
+      title="Frontend Engineer"
+      company="Webcoffee"
+      companyUrl="https://webcoffee.in"
+      companyLogo="/company/webcoffee.png"
+      description="Focused on building responsive, user-friendly web apps with TypeScript and Next.js for diverse client projects."
+    />
+    <ExperienceItem
+      period="2022 - 2023"
+      title="Software Engineer"
+      company="ClusterDev"
+      companyUrl="https://clusterdev.net"
+      companyLogo="/company/clusterdev.png"
+      description="Worked on diverse frontend and full-stack projects using TypeScript, React, Node.js, and PostgreSQL, driving R&D and product innovation."
+    />
+    <ExperienceItem
+      period="2022 - 2022"
+      title="Software Engineer"
+      company="Entvin (YC S22)"
+      companyUrl="https://entvin.com"
+      companyLogo="/company/entvin.png"
+      description="Developed secure onboarding and scalable systems, working with the founding team to build the startup's technical backbone."
+    />
   </div>
 </section>
