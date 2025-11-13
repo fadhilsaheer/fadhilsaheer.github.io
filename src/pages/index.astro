@@ -2,6 +2,7 @@
 import "../styles/global.css";
 
 import Header from "../components/Header.astro";
+import About from "../components/About.astro";
 ---
 
 <html lang="en">
@@ -57,31 +58,10 @@ import Header from "../components/Header.astro";
     <link rel="icon" href="/favicon.png" type="image/png" />
     <meta name="theme-color" content="#181926" />
   </head>
-  <body
-    class="bg-macchiato-crust text-macchiato-text flex flex-col items-center py-10"
-  >
-    <Header />
-
-    <div class="max-w-xl w-full px-5">
-      <h1 class="text-2xl font-medium">Fadhil Saheer</h1>
-
-      <img
-        src="https://res.cloudinary.com/dvsipt8rv/image/upload/v1759453070/public/ash_yiqvxi.jpg"
-        alt=""
-        class="size-20 rounded-full"
-      />
-
-      <div class="p-5 mt-10 bg-macchiato-mantle hover:bg-macchiato-base">
-        <h3>Hello World</h3>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem quasi
-          saepe minus fugit asperiores odit. Facere eaque commodi
-          exercitationem, distinctio, ipsam, in alias aperiam ullam reiciendis
-          voluptas natus suscipit neque.
-        </p>
-      </div>
-
-      <div class="h-screen"></div>
-    </div>
+  <body class="bg-macchiato-crust text-macchiato-text">
+    <main class="flex flex-col items-center py-10 gap-10 tracking-wide">
+      <Header />
+      <About />
+    </main>
   </body>
 </html>
