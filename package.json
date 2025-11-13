@@ -1,5 +1,5 @@
 {
-  "name": "",
+  "name": "fadhilsaheer.tech",
   "type": "module",
   "version": "0.0.1",
   "scripts": {
@@ -9,6 +9,8 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^5.15.5"
+    "@tailwindcss/vite": "^4.1.17",
+    "astro": "^5.15.5",
+    "tailwindcss": "^4.1.17"
   }
 }
