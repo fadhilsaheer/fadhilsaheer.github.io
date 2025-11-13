@@ -1,32 +1,41 @@
 ---
-import Link from './Link.astro';
+import Signature from "./Signature.astro";
 ---
 
-<div class='mt-20 pb-36 text-base'>
-  <div class='text-rose-100/50'>
-    <div class='flex flex-col justify-between font-medium lg:flex-row'>
-      <div class='flex space-x-5'>
-        <Link
-          href='https://discord.com/users/733166402567012363'
-          title='Discord'
-        />
-        <Link
-          href='https://www.linkedin.com/in/fadhilsaheer'
-          title='Linkedin'
-        />
-        <Link href='https://t.me/fadhilsaheer' title='Telegram' />
-        <Link href='https://dev.to/fadhilsaheer' title='Dev' />
-      </div>
-      <div class='space-x-5 pt-2 lg:pt-0'>
-        <Link href='https://instagram.com/fadhilsaheer' title='Instagram' />
-        <Link href='https://twitter.com/fadhilsaheer' title='Twitter' />
-        <Link href='https://github.com/fadhilsaheer' title='Github' />
-      </div>
-    </div>
-  </div>
-  <p class='mt-8 text-rose-100/30'>
-    Built with <Link href='https://astro.build/' title='Astro' />,{' '}
-    <Link href='https://reactjs.org/' title='React JS' /> and{' '}
-    <Link href='https://tailwindcss.com' title='Tailwind' />
+<footer
+  class="container flex items-end justify-between gap-2 text-macchiato-subtext-0 font-geist-mono font-light text-xs tracking-wider"
+>
+  <p class="flex items-center gap-2 uppercase">
+    <span class="font-geist text-sm">&copy;</span>
+    <span id="date">2025</span> FADHIL
+    <span class="text-sm">/</span>
+    <svg
+      width="16"
+      height="16"
+      viewBox="0 0 17 17"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      class=""
+      ><path
+        d="M12.6667 7.25651C12.6667 9.90718 8.00004 14.5898 8.00004 14.5898C8.00004 14.5898 3.33337 9.90718 3.33337 7.25651C3.33337 4.60584 5.42271 2.58984 8.00004 2.58984C10.5774 2.58984 12.6667 4.60584 12.6667 7.25651Z"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"></path><path
+        d="M8 9.25684C9.10457 9.25684 10 8.36141 10 7.25684C10 6.15227 9.10457 5.25684 8 5.25684C6.89543 5.25684 6 6.15227 6 7.25684C6 8.36141 6.89543 9.25684 8 9.25684Z"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"></path></svg
+    >
+    <span>Kerala, India</span>
   </p>
-</div>
+
+  <Signature />
+</footer>
+
+<script>
+  let dateField = document.getElementById("date");
+
+  if (dateField) {
+    dateField.textContent = `${new Date().getFullYear()}`;
+  }
+</script>

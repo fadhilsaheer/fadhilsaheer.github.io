@@ -1,6 +1,5 @@
 # build output
 dist/
-
 # generated types
 .astro/
 
@@ -20,9 +19,7 @@ pnpm-debug.log*
 # macOS-specific files
 .DS_Store
 
-# pnpm lock
-pnpm-lock.yaml
+# jetbrains setting folder
+.idea/
 
-# editor
-.vscode
-.idea
+bun.lockb

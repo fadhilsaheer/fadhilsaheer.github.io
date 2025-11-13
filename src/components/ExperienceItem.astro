@@ -1,0 +1,40 @@
+---
+interface Props {
+  period: string;
+  title: string;
+  company: string;
+  companyUrl: string;
+  companyLogo: string;
+  description: string;
+}
+
+const { period, title, company, companyUrl, companyLogo, description } =
+  Astro.props;
+---
+
+<div class="flex flex-col md:flex-row gap-2">
+  <p
+    class="font-light font-geist-mono text-macchiato-subtext-0 text-xs min-w-40 mt-1"
+  >
+    {period}
+  </p>
+  <div>
+    <h3 class="font-light">
+      {title} at <a
+        href={companyUrl}
+        target="_blank"
+        class="group cursor-pointer"
+      >
+        <img
+          src={companyLogo}
+          alt={company}
+          class="ml-1 size-6 inline rounded-md align-top transition-all duration-100 ease-in-out group-hover:scale-110 group-hover:-rotate-10"
+        />
+        {company}
+      </a>
+    </h3>
+    <p class="text-macchiato-subtext-0 font-light mt-2">
+      {description}
+    </p>
+  </div>
+</div>

@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&family=Geist:wght@100..900&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --font-geist: "Geist", ui-sans-serif, system-ui, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-geist-mono: "Geist Mono", ui-monospace, SFMono-Regular, Menlo, Monaco,
+    Consolas, "Liberation Mono", "Courier New", monospace;
+
+  --color-macchiato-rosewater: #f4dbd6;
+  --color-macchiato-flamingo: #f0c6c6;
+  --color-macchiato-pink: #f5bde6;
+  --color-macchiato-mauve: #c6a0f6;
+  --color-macchiato-red: #ed8796;
+  --color-macchiato-maroon: #ee99a0;
+  --color-macchiato-peach: #f5a97f;
+  --color-macchiato-yellow: #eed49f;
+  --color-macchiato-green: #a6da95;
+  --color-macchiato-teal: #8bd5ca;
+  --color-macchiato-sky: #91d7e3;
+  --color-macchiato-sapphire: #7dc4e4;
+  --color-macchiato-blue: #8aadf4;
+  --color-macchiato-lavender: #b7bdf8;
+
+  --color-macchiato-text: #cad3f5;
+  --color-macchiato-subtext-1: #b8c0e0;
+  --color-macchiato-subtext-0: #9ca4bf;
+
+  --color-macchiato-overlay-2: #939ab7;
+  --color-macchiato-overlay-1: #8087a2;
+  --color-macchiato-overlay-0: #6e738d;
+
+  --color-macchiato-surface-2: #5b6078;
+  --color-macchiato-surface-1: #494d64;
+  --color-macchiato-surface-0: #363a4f;
+
+  --color-macchiato-base: #24273a;
+  --color-macchiato-mantle: #1e2030;
+  --color-macchiato-crust: #181926;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: var(--color-macchiato-crust);
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: var(--color-macchiato-base);
+    border-radius: 10px;
+  }
+
+  body {
+    background-color: var(--color-macchiato-crust);
+    color: var(--color-macchiato-text);
+    font-family: var(--font-geist);
+  }
+
+  .container {
+    @apply px-5 max-w-xl! w-full;
+  }
+}
